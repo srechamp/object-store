@@ -90,8 +90,8 @@ func (s *Store) Get(bucketName, objectID string) ([]byte, error) {
     return b.content[h], nil
 }
 
-// Delete removes an object reference from a bucket.
-// If no other objectIDs reference the content, the content is also removed.
+/* Delete removes an object reference from a bucket.
+If no other objectID's reference the content, the content is also removed. */
 func (s *Store) Delete(bucketName, objectID string) error {
     s.mu.RLock()
     b, ok := s.buckets[bucketName]
