@@ -46,7 +46,7 @@ func (h *Handler) Get(w http.ResponseWriter, r *http.Request) {
     data, err := h.store.Get(bucket, objectID)
     if err != nil {
         if errors.Is(err, store.ErrNotFound) {
-            // Spec requires 400 for not found (noted in README as spec-compliant deviation from 404)
+            // Spec requires 400 for not found (spec-compliant deviation from 404)
             http.Error(w, "object not found", http.StatusBadRequest)
             return
         }
