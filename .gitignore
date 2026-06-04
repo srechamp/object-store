@@ -1,0 +1,33 @@
+# Compiled binary
+bin/
+object-store
+
+# Go build cache
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+
+# IDE & editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environment / secrets
+.env
+.env.*
+*.pem
+*.key
+
+# Test coverage output
+coverage.out
+coverage.html
