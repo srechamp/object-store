@@ -56,7 +56,7 @@ func TestDeleteNotFound(t *testing.T) {
     }
 }
 
-// Most important: deduplication test
+// Deduplication test
 func TestDeduplication(t *testing.T) {
     s := store.New()
     body := []byte("hello world")
