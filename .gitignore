@@ -11,9 +11,6 @@ object-store
 *.test
 *.out
 
-# Go module download cache
-vendor/
-
 # IDE & editor
 .vscode/
 .idea/
